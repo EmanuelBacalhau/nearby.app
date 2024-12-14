@@ -20,13 +20,11 @@ export const Place = ({ data, ...rest }: Props) => {
       <Image style={styles.image} source={{ uri: data.cover }} />
 
       <View style={styles.content}>
-        <Text style={styles.name}>
-          {data.name.length > 20 ? `${data.name.slice(0, 20)}...` : data.name}
+        <Text style={styles.name} numberOfLines={1}>
+          {data.name}
         </Text>
-        <Text style={styles.description}>
-          {data.description.length > 50
-            ? `${data.description.slice(0, 50)}...`
-            : data.description}
+        <Text style={styles.description} numberOfLines={2}>
+          {data.description}
         </Text>
 
         <View style={styles.footer}>

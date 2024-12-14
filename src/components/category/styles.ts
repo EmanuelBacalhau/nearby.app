@@ -17,7 +17,10 @@ export const styles = StyleSheet.create({
     color: colors.gray[500],
     fontSize: 14,
   },
-  containerSelected: { backgroundColor: colors.green.base },
+  containerSelected: {
+    backgroundColor: colors.green.base,
+    borderColor: colors.green.base,
+  },
   textSelected: {
     color: 'white',
   },
